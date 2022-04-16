@@ -61,7 +61,7 @@
     border-style: dotted;
   }
 
-  li {
+  /*li {
     list-style-type: none;
     position: relative;
     margin: 2px;
@@ -74,7 +74,7 @@
     background: #CCFF99;
   }
   
-  li.done::before {
+ /* li.done::before {
     content: '';
     position: absolute;
     border-color: #009933;
@@ -108,4 +108,9 @@
     color: red;
     font-size: 1.2em;
     font-style: italic;
+  }
+
+  ul li::marker {
+    color: red;
+    font-size: 1.5em;
   }
