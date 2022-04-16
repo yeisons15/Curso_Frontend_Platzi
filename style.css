@@ -87,3 +87,8 @@
     transform: rotate(45deg);
     width: 0.5em;
   }
+
+  p::first-letter {
+    color: red;
+    font-size: 130%;
+  }
