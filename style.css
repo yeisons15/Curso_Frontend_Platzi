@@ -92,3 +92,20 @@
     color: red;
     font-size: 130%;
   }
+
+  ::first-line {
+   /* color: blue;
+    text-transform: uppercase;
+  
+  
+    /* ADVERTENCIA: NO USES ESTOS*/
+    /* Muchas propiedades son inválidas en pseudoelementos ::first-line */
+    margin-left: 20px;
+    text-indent: 20px;
+  }
+
+  input::placeholder {
+    color: red;
+    font-size: 1.2em;
+    font-style: italic;
+  }
