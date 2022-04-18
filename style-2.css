@@ -1,15 +1,3 @@
-input:default {
-    box-shadow: 0 0 2px 1px rgb(112, 80, 255);
-  }
-  
-  input:default + label {
-    color: rgb(80, 255, 118);
-  }
-
-  :dir(ltr) {
-    background-color: yellow;
-  }
-  
-  :dir(rtl) {
-    background-color: powderblue;
+input[type="text"]:disabled {
+    background: #ccc;
   }
