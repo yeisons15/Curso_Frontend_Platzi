@@ -1,11 +1,7 @@
-
-
-.box {
-background: pink;
-height: 80px;
-width: 80px;
-}
-
-.box:empty {
-background: lime;
-}
+input:enabled {
+    color: #2b2;
+  }
+  
+  input:disabled {
+    color: #aaa;
+  }
