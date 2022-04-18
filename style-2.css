@@ -5,3 +5,11 @@ input:default {
   input:default + label {
     color: rgb(80, 255, 118);
   }
+
+  :dir(ltr) {
+    background-color: yellow;
+  }
+  
+  :dir(rtl) {
+    background-color: powderblue;
+  }
