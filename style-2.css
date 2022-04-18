@@ -1,31 +1,30 @@
-a:link { color: blue; }          /* Enlaces no visitados */
-a:visited { color: purple; }     /* Enlaces visitados */
-a:hover { background: yellow; }  /* El usuario esta sobre el enlace */
-a:active { color: lime; }        /* Enlaces activos */
-
-
-div,
-select {
-  margin: 8px;
-}
-
-/* Etiquetas para entradas marcadas */
-input:checked + label {
-  color: red;
-}
-
-/* Elemento Radio, cuando está marcado */
-input[type="radio"]:checked {
-  box-shadow: 0 0 0 3px orange;
-}
-
-/* Elemento Checkbox, cuando está marcado */
-input[type="checkbox"]:checked {
-  box-shadow: 0 0 0 3px hotpink;
-}
-
-/* Elementos Option, cuando se seleccionan */
-option:checked {
-  box-shadow: 0 0 0 3px lime;
-  color: red;
-}
+/* Hide the toggle checkbox */
+#expand-toggle {
+    display: none;
+  }
+  
+  /* Hide expandable content by default */
+  .expandable {
+    visibility: collapse;
+    background: #ddd;
+  }
+  
+  /* Style the button */
+  #expand-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 11px;
+    background-color: #ff7;
+    border: 1px solid;
+    border-radius: 3px;
+  }
+  
+  /* Show hidden content when the checkbox is checked */
+  #expand-toggle:checked ~ * .expandable {
+    visibility: visible;
+  }
+  
+  /* Style the button when the checkbox is checked */
+  #expand-toggle:checked ~ #expand-btn {
+    background-color: #ccc;
+  }
