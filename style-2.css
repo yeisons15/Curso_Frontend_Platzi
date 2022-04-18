@@ -1,30 +1,7 @@
-/* Hide the toggle checkbox */
-#expand-toggle {
-    display: none;
+input:default {
+    box-shadow: 0 0 2px 1px rgb(112, 80, 255);
   }
   
-  /* Hide expandable content by default */
-  .expandable {
-    visibility: collapse;
-    background: #ddd;
-  }
-  
-  /* Style the button */
-  #expand-btn {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 5px 11px;
-    background-color: #ff7;
-    border: 1px solid;
-    border-radius: 3px;
-  }
-  
-  /* Show hidden content when the checkbox is checked */
-  #expand-toggle:checked ~ * .expandable {
-    visibility: visible;
-  }
-  
-  /* Style the button when the checkbox is checked */
-  #expand-toggle:checked ~ #expand-btn {
-    background-color: #ccc;
+  input:default + label {
+    color: rgb(80, 255, 118);
   }
