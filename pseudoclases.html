@@ -9,17 +9,16 @@
 </head>
 <body>
 
-    <form action="url_of_form">
-        <label for="FirstField">Primer campo (habilitado):</label>
-        <input type="text" id="FirstField" value="Lorem"><br>
-      
-        <label for="SecondField">Segundo campo (deshabilitado):</label>
-        <input type="text" id="SecondField" value="Ipsum" disabled="disabled"><br>
-      
-        <input type="button" value="Enviar">
-      </form>
+    <p>Primera página.</p>
+    <p>Segunda página.</p>
+    <button>Imprimir!</button>
 
-      
+
+    <script>
+        document.querySelector("button").onclick = function () {
+         window.print();
+        }
+    </script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
-input:enabled {
-    color: #2b2;
+@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
   }
   
-  input:disabled {
-    color: #aaa;
+  p {
+    page-break-after: always;
   }
