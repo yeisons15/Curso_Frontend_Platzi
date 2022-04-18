@@ -9,16 +9,17 @@
 </head>
 <body>
 
-    <p>Primera página.</p>
-    <p>Segunda página.</p>
-    <button>Imprimir!</button>
+    <div>
+        <p>¡Este texto está seleccionado!</p>
+        <h2>Este texto no está seleccionado: no es un `p`.</h2>
+        <p>Este texto no está seleccionado.</p>
+      </div>
+      
+      <div>
+        <h2>Este texto no está seleccionado: no es un `p`.</h2>
+        <p>Este texto no está seleccionado.</p>
+      </div>
 
-
-    <script>
-        document.querySelector("button").onclick = function () {
-         window.print();
-        }
-    </script>
 </body>
 
 </html>
