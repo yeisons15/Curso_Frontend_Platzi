@@ -1,6 +1,9 @@
-p:first-child {
-    color: lime;
-    background-color: black;
-    padding: 5px;
-  }
-  
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
