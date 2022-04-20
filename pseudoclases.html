@@ -9,7 +9,26 @@
 </head>
 <body>
   
-  <a href="#">Intenta pasar el mouse sobre este enlace.</a>
+  <div>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox">Esta etiqueta comienza con el color lima.</label>
+  </div>
+  <div>
+    <input type="radio" id="radio">
+    <label for="radio">Esta etiqueta comienza con el color lima.</label>
+  </div>
+
+  <progress>
+
+
+  <script>
+    var inputs = document.getElementsByTagName("input");
+
+    for (var i = 0; i < inputs.length; i++) {
+    inputs[i].indeterminate = true;
+    }
+
+  </script>
 
 </body>
 
