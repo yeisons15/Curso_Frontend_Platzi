@@ -1,9 +1,8 @@
-.red-input:focus {
-  background: yellow;
-  color: red;
+a {
+  background-color: powderblue;
+  transition: background-color .5s;
 }
 
-.blue-input:focus {
-  background: yellow;
-  color: blue;
+a:hover {
+  background-color: gold;
 }
