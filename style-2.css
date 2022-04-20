@@ -1,25 +1,24 @@
-li {
-  list-style: none;
-  margin-bottom: 1em;
+input:invalid {
+  background-color: #ffdddd;
 }
 
-input {
-  border: 1px solid black;
+form:invalid {
+  border: 5px solid #ffdddd;
 }
 
-input:in-range {
-  background-color: rgba(0, 255, 0, 0.25);
+input:valid {
+  background-color: #ddffdd;
 }
 
-input:out-of-range {
-  background-color: rgba(255, 0, 0, 0.25);
-  border: 2px solid red;
+form:valid {
+  border: 5px solid #ddffdd;
 }
 
-input:in-range + label::after {
-  content: 'bien.';
+input:required {
+  border-color: #800000;
+  border-width: 3px;
 }
 
-input:out-of-range + label::after {
-  content: 'fuera de rango!';
+input:required:invalid {
+  border-color: #C00000;
 }
