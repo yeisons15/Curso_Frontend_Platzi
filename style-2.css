@@ -1,14 +1,25 @@
-input:indeterminate + label {
-  background: lime;
+li {
+  list-style: none;
+  margin-bottom: 1em;
 }
 
-
-progress {
-  margin: 4px;
+input {
+  border: 1px solid black;
 }
 
-progress:indeterminate {
-  opacity: 0.5;
-  background-color: lightgray;
-  box-shadow: 0 0 2px 1px red;
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: 'fuera de rango!';
 }
