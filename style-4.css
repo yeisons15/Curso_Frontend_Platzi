@@ -63,5 +63,14 @@ p:nth-of-type(2n+1) {
   main :only-of-type {
     color: red;
   }
+
   
+  input { min-width: 25em; }
+input:-moz-read-only { background: cyan; }
+input:read-only { background: cyan; }
+
+p:-moz-read-only { background: lightgray; }
+p:read-only { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
+
     
