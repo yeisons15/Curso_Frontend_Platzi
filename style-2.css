@@ -22,3 +22,7 @@ input:required {
 input:required:invalid {
   border-color: #C00000;
 }
+
+a:hover{
+  color:orange;
+}
