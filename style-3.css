@@ -23,3 +23,32 @@ li {
   input:out-of-range + label::after {
     content: 'fuera de rango!';
   }
+
+  input:invalid {
+    background-color: #ffdddd;
+  }
+  
+  form:invalid {
+    border: 5px solid #ffdddd;
+  }
+  
+  input:valid {
+    background-color: #ddffdd;
+  }
+  
+  form:valid {
+    border: 5px solid #ddffdd;
+  }
+  
+  input:required {
+    border-color: #800000;
+    border-width: 3px;
+  }
+  
+  input:required:invalid {
+    border-color: #C00000;
+  }
+
+    :lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+    :lang(fr) > q { quotes: '« ' ' »'; }
+    :lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
