@@ -63,3 +63,34 @@ li {
         color: red;
         font-style: italic;
       }
+
+      a:link {
+        background-color: gold;
+        color: green;
+      }
+
+      .fancy {
+        text-shadow: 2px 2px 3px gold;
+      }
+      
+      /* elementos <p> que no están en la clase `.fancy` */
+      p:not(.fancy) {
+        color: green;
+      }
+      
+      /* Elementos que no son elementos <p> */
+      body :not(p) {
+        text-decoration: underline;
+        color: blue;
+      }
+      
+      /* Elementos que no son elementos <div> o <span> */
+      body :not(div):not(span) {
+        font-weight: bold;
+      }
+      
+      /* Elementos que no son `.crazy` o `.fancy` */
+      /* Tenga en cuenta que esta sintaxis aún no está bien soportada. */
+      body :not(.crazy, .fancy) {
+        font-family: sans-serif;
+      }
