@@ -1,0 +1,67 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  span,
+  div em {
+    padding: 5px;
+    border: 1px solid green;
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+  
+  .first span:nth-child(2n+1),
+  .second span:nth-child(2n+1),
+  .third span:nth-of-type(2n+1) {
+    background-color: lime;
+  }
+
+  table {
+    border: 1px solid blue;
+  }
+  
+  /* Selecciona los últimos tres elementos */
+  tr:nth-last-child(-n+3) {
+    background-color: pink;
+  }
+  
+  /* Toma todos los elementos a partir del penúltimo elemento */
+  tr:nth-last-child(n+2) {
+    color: blue;
+  }
+  
+  /* Seleccione solo el penúltimo elemento */
+  tr:nth-last-child(2) {
+    font-weight: 600;
+  }
+
+  
+  span:nth-last-of-type(2) {
+    background-color: lime;
+  }
+
+  /* Párrafos impares */
+p:nth-of-type(2n+1) {
+    color: red;
+  }
+  
+  /* Párrafos pares */
+  p:nth-of-type(2n) {
+    color: blue;
+  }
+  
+  /* Primer párrafo */
+  p:nth-of-type(1) {
+    font-weight: bold;
+  }
+
+
+  main :only-child {
+    color: red;
+  }
+
+  main :only-of-type {
+    color: red;
+  }
+  
+    
