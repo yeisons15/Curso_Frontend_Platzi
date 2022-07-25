@@ -4,3 +4,9 @@ list.addEventListener('click', function(ev) {
      ev.target.classList.toggle('done');
   }
 }, false);
+
+var inputs = document.getElementsByTagName("input");
+
+for (var i = 0; i < inputs.length; i++) {
+  inputs[i].indeterminate = true;
+}

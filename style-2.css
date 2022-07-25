@@ -26,3 +26,17 @@ input:required:invalid {
 a:hover{
   color:orange;
 }
+
+input:indeterminate + label {
+  background: lime;
+}
+
+progress {
+  margin: 4px;
+}
+
+progress:indeterminate {
+  opacity: 0.5;
+  background-color: lightgray;
+  box-shadow: 0 0 2px 1px red;
+}
